@@ -5,7 +5,9 @@ module.exports = url => {
   const api = 'https://g.api.mega.co.nz'
 
   const type = url.split("/")[3]
-  const id = url.split("/")[4].split("#")[0]
+  const id = url.split("/")[4] ? url.split("/")[4].split("#")[0] : undefined
+
+  if (!type || !id) return false //not a mega link
 
   let payload
   if (type === 'folder') {
@@ -22,7 +24,7 @@ module.exports = url => {
     .then(res => {
 
         if (typeof res === 'number' && res < 0) return false
-        else return true
+        else return true 
         
     })
 }

@@ -1,6 +1,6 @@
 {
   "name": "mega-link-checker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Little tool that checks if a mega.nz shared link is valid or not",
   "main": "index.js",
   "directories": {

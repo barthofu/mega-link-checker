@@ -14,12 +14,6 @@
 
 > #### Little tool that checks if a [MEGA](https://mega.nz) is valid or not.
 
-#### Table of content:
-
-* **[Installation](#installation)**
-* **[Use](#use)**
-* **[License](#license)**
-
 ------
 
 ## Installation
@@ -33,7 +27,8 @@ npm install --save mega-link-checker
 ```js
 const megaLinkChecker = require('mega-link-checker')
 
-megaLinkChecker('your_mega_shared_link').then(result => console.log(result)) // can be either 'true' or 'false'
+megaLinkChecker('your_mega_shared_link')
+    .then(result => console.log(result)) // can be either 'true' or 'false'
 ```
 
 ## License

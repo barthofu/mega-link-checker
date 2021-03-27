@@ -7,7 +7,7 @@ module.exports = url => {
   const type = url.split("/")[3]
   const id = url.split("/")[4] ? url.split("/")[4].split("#")[0] : undefined
 
-  if (!type || !id) return false //not a mega link
+  if (!type || !id) return "not a mega link"
 
   let payload
   if (type === 'folder') {

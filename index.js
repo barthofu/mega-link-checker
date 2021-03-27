@@ -1,13 +1,15 @@
 const fetch = require('isomorphic-fetch')
 
+const regex = /https:\/\/mega\.nz\/(file|folder)\/[\s\S]*#[\s\S]*/g
+
 module.exports = url => {
 
   const api = 'https://g.api.mega.co.nz'
 
-  const type = url.split("/")[3]
-  const id = url.split("/")[4] ? url.split("/")[4].split("#")[0] : undefined
+  if (!regex.test(url)) return "not a mega link"
 
-  if (!type || !id) return "not a mega link"
+  const type = url.split("/")[3]
+  const id = url.split("/")[4].split("#")[0]
 
   let payload
   if (type === 'folder') {

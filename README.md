@@ -12,9 +12,10 @@
   </a>
 </p>
 
-> #### Little tool that checks if a [MEGA](https://mega.nz) is valid or not.
+> #### Little tool that checks if a shared [MEGA](https://mega.nz) link is valid or not.
 
-------
+
+
 
 ## Installation
 

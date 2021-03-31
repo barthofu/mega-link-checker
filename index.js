@@ -1,10 +1,9 @@
 const fetch = require('isomorphic-fetch')
 
-const regex = /https:\/\/mega\.nz\/(file|folder)\/[\s\S]*#[\s\S]*/g
+const regex = /https:\/\/mega\.nz\/(file|folder)\/[\s\S]*#[\s\S]*/
+const api = 'https://g.api.mega.co.nz'
 
 module.exports = url => {
-
-  const api = 'https://g.api.mega.co.nz'
 
   if (!regex.test(url)) return "not a mega link"
 

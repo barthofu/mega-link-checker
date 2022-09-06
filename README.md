@@ -2,14 +2,11 @@
 
 <p align="center">
     <a href="http://forthebadge.com/" target="_blank">
-    	<img src="http://forthebadge.com/images/badges/built-with-love.svg"
+    	<img src="https://img.shields.io/badge/Made%20with-%F0%9F%A4%8D-orange"
     </a>
-</p>
-
-<p align="center">
-  <a href="https://opensource.org/licenses/MIT" target="_blank">
-    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License">
-  </a>
+    <a href="https://opensource.org/licenses/MIT" target="_blank">
+        <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License">
+    </a>
 </p>
 
 > #### Little tool that checks if a shared [MEGA](https://mega.nz) link is valid or not.
